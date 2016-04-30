@@ -49,7 +49,7 @@ $pdo->query($truncateTableSQL);
 $prepare = $pdo->prepare($insertSQL);
 
 //繰り返しの回数
-$repetition = 100000;
+$repetition = 100;
 
 $startTime=microtime(true);//タイマースタート
 //インサートの繰り返し
