@@ -26,7 +26,7 @@ function ingredients($kind)
 
 //SQL達
 $createTableSQL =
-    "CREATE TABLE IF NOT EXISTS testdb.inserttest (
+    "CREATE TABLE testdb.inserttest (
         id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
         cipher text COLLATE utf8mb4_general_ci NOT NULL,
 //         numbers int NOT NULL
