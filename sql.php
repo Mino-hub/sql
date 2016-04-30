@@ -29,8 +29,8 @@ $createTableSQL =
     "CREATE TABLE testdb.inserttest (
         id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
         cipher text COLLATE utf8mb4_general_ci NOT NULL,
-//         numbers int NOT NULL
-//     ) ENGINE=InnoDB;";
+        numbers int NOT NULL
+    ) ENGINE=InnoDB;";
 
 $truncateTableSQL =
     "TRUNCATE TABLE testdb.inserttest;";
