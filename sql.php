@@ -42,14 +42,14 @@ $pdo = new PDO($dns, $usr, $pas);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 //テーブルの整理
-$pdo->query($createTableSQL);
+// $pdo->query($createTableSQL);
 $pdo->query($truncateTableSQL);
 
 //プリペアードステートメントの準備
 $prepare = $pdo->prepare($insertSQL);
 
 //繰り返しの回数
-$repetition = 10000;
+$repetition = 100000;
 
 $startTime=microtime(true);//タイマースタート
 //インサートの繰り返し
